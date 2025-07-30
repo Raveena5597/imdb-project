@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
-import Watchlist from './components/Watchlist'
+import WatchList from './components/WatchList';
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/watchlist' element={<Watchlist />} />
+        <Route path='/watchlist' element={<WatchList />} />
       </Routes>
     </>
   )
